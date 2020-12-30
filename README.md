@@ -33,7 +33,7 @@ Si el proyecto se ha creado correctamente, se puede lanzar el servidor:
 ionic serve
 ```
 
-
+<img src="ionic1blank.png>
 
 Estructura de directorios y ficheros:
 
