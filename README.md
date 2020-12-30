@@ -78,8 +78,35 @@ ionic start exercise01b blank --type=ionic-angular
 Estructura de directorios y ficheros:
 
 ```console
-
+exercise01b
+├── ionic.config.json
+├── node_modules
+.   .
+.   .
+.   .
+├── package.json
+├── package-lock.json
+├── src
+│   ├── app
+│   ├── assets
+│   ├── index.html
+│   ├── manifest.json
+│   ├── pages
+│   ├── service-worker.js
+│   └── theme
+├── tsconfig.json
+├── tslint.json
+└── www
+    ├── assets
+    ├── build
+    ├── index.html
+    ├── manifest.json
+    └── service-worker.js
 ```
+
+Como podemos comprobar, hay más diferencias que similitudes en la estructura de directorios de un proyecto de la versión 2/3 con respecto a otro de la versión 1.
+
+
 
 ### Creación de un proyecto en Ionic Versión 4 o posterior (con Angular)
 
