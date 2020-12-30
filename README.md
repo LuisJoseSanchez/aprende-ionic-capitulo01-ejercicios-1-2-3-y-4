@@ -106,7 +106,13 @@ exercise01b
 
 Como podemos comprobar, hay más diferencias que similitudes en la estructura de directorios de un proyecto de la versión 2/3 con respecto a otro de la versión 1.
 
+En la versión 1, el grueso de la aplicación está en la carpeta `www`. Dentro de ese directorio está `index.html` que hace las veces de plantilla HTML.
 
+La lógica de negocio estaría contenida dentro de la carpeta `js`, los estilos en la carpeta `css` y las imágenes en `img`.
+
+Se trata de una estructura muy simple, parecida a lo que sería un proyecto de HTML con Javascript sin ningún framework.
+
+**En Ionic 1 se utilizaba AngularJS** (versión 1.X), todavía no existía **Angular** a secas (versión 2+), por tanto, la lógica de negocio se programaba directamente en Javascript.
 
 ### Creación de un proyecto en Ionic Versión 4 o posterior (con Angular)
 
