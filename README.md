@@ -1,5 +1,14 @@
 # Soluciones a los ejercicios 1, 2, 3 y 4 del capítulo 1
 
+<a href="https://leanpub.com/aprendeionic">
+    <img src="aprendeionicconejercicios200.png">
+</a>
+
+* [Ejercicio 1](#ejercicio-1)
+* [Ejercicio 2](#ejercicio-2)
+* [Ejercicio 3](#ejercicio-3)
+* [Ejercicio 4](#ejercicio-4)
+
 ## Ejercicio 1
 
 ### Creación de un proyecto en Ionic Versión 1 (con AngularJS)
@@ -279,3 +288,7 @@ La carpeta `pages` también desaparece en esta versión, aunque se puede crear m
 ```console
 
 ```
+
+<hr>
+
+:star: Si te ha gustado este repo, dale una estrellita :wink:
