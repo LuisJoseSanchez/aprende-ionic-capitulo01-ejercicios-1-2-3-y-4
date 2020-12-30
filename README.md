@@ -38,10 +38,31 @@ ionic serve
 Estructura de directorios y ficheros:
 
 ```console
-cd exercise01a
-npm install node-sass
-rm -Rf node_modules
-npm install
+exercise01a
+├── bower.json
+├── gulpfile.js
+├── hooks
+│   ├── after_prepare
+│   └── README.md
+├── ionic.config.json
+├── ionic.starter.json
+├── node_modules
+│   │
+.   .
+.   .
+.   .
+├── package.json
+├── package-lock.json
+├── scss
+│   └── ionic.app.scss
+└── www
+    ├── css
+    ├── img
+    ├── index.html
+    ├── js
+    ├── lib
+    ├── manifest.json
+    └── service-worker.js
 ```
 
 ### Creación de un proyecto en Ionic Versión 3 (con Angular)
