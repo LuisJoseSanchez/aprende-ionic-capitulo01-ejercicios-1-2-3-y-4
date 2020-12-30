@@ -65,6 +65,14 @@ exercise01a
     └── service-worker.js
 ```
 
+Como se puede observar, en un proyecto de la versión 1 de Ionic, el grueso de la aplicación está en la carpeta `www`. Dentro de ese directorio está `index.html` que hace las veces de plantilla HTML.
+
+La lógica de negocio estaría contenida dentro de la carpeta `js`, los estilos en la carpeta `css` y las imágenes en `img`.
+
+Se trata de una estructura muy simple, parecida a lo que sería un proyecto de HTML con Javascript sin ningún framework.
+
+**En Ionic 1 se utiliza AngularJS** (versión 1.X). Cuando se liberó esta versión de Ionic, todavía no existía **Angular** a secas (versión 2+), por tanto, la lógica de negocio se programaba directamente en Javascript.
+
 ### Creación de un proyecto en Ionic Versión 3 (con Angular)
 
 Creación del proyecto:
@@ -106,13 +114,9 @@ exercise01b
 
 Como podemos comprobar, hay más diferencias que similitudes en la estructura de directorios de un proyecto de la versión 2/3 con respecto a otro de la versión 1.
 
-En la versión 1, el grueso de la aplicación está en la carpeta `www`. Dentro de ese directorio está `index.html` que hace las veces de plantilla HTML.
+En esta versión, el código fuente de la aplicación está en la carpeta `src` mientras que en la carpeta `www` se colocará el código de la aplicación una vez compilada, lista para su despliegue.
 
-La lógica de negocio estaría contenida dentro de la carpeta `js`, los estilos en la carpeta `css` y las imágenes en `img`.
-
-Se trata de una estructura muy simple, parecida a lo que sería un proyecto de HTML con Javascript sin ningún framework.
-
-**En Ionic 1 se utilizaba AngularJS** (versión 1.X), todavía no existía **Angular** a secas (versión 2+), por tanto, la lógica de negocio se programaba directamente en Javascript.
+Si indagamos un poco dentro del directorio `app` o en `pages` (donde se encuentra la página principal que viene por defecto) encontraremos archivos con la extensión `.ts`. Estos archivos contienen código en **Typescript**, lo que nos da una pista que nos indica que estamos ya ante un proyecto en el que se usa **Angular** y no **AngularJS**.
 
 ### Creación de un proyecto en Ionic Versión 4 o posterior (con Angular)
 
