@@ -224,6 +224,8 @@ La carpeta `pages` también desaparece en esta versión, aunque se puede crear m
 </html>
 ```
 
+<img src="ionic1holamundo.png">
+
 ### Hola mundo en Ionic 2/3
 
 `src/app/pages/home/home.html`
@@ -241,6 +243,18 @@ La carpeta `pages` también desaparece en esta versión, aunque se puede crear m
   ¡Hola mundo!
 </ion-content>
 ```
+
+<img src="ionic3holamundo.png">
+
+### Hola mundo en Ionic 4+
+
+``
+
+```console
+
+```
+
+<img src="ionic4holamundo.png">
 
 ## Ejercicio 3
 
