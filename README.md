@@ -137,6 +137,8 @@ Creación del proyecto:
 ionic start exercise01c blank --type=angular
 ```
 
+<img src="ionic4blank.png">
+
 Estructura de directorios y ficheros:
 
 ```console
