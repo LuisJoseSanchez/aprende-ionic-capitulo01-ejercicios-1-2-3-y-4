@@ -67,9 +67,13 @@ exercise01a
 
 ### Creación de un proyecto en Ionic Versión 3 (con Angular)
 
-```console
+Creación del proyecto:
 
+```console
+ionic start exercise01b blank --type=ionic-angular
 ```
+
+<img src="ionic3blank.png">
 
 Estructura de directorios y ficheros:
 
