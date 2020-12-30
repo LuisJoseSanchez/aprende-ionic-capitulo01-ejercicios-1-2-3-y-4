@@ -163,6 +163,12 @@ exercise01c
 └── tslint.json
 ```
 
+En la versión 4+, a primera vista, hay más carpetas y archivos que en la versión 2/3.
+
+Desaparece la carpeta `www` por defecto. Esta carpeta y su contenido se generará cuando se compile la aplicación con `ionic build`.
+
+La carpeta `pages` también desaparece en esta versión, aunque se puede crear manualmente para guardar las páginas de la aplicación si se quiere.
+
 ## Ejercicio 2
 
 ```console
