@@ -4,7 +4,7 @@
 
 ### Creación de un proyecto en Ionic Versión 1 (con AngularJS)
 
-Antes de nada, hay que instalar Python 2 en caso de no tenerlo instalado en el sistema, aunque tengamos instalada una versión más reciente, por ejemplo Python 3.
+Antes de nada, hay que instalar Python 2 en caso de no tenerlo instalado en el sistema, aunque tengamos instalada una versión más reciente como por ejemplo Python 3.
 
 ```console
 sudo apt install python2
@@ -16,12 +16,32 @@ Creamos un proyecto en blanco:
 ionic start exercise01a blank --type=ionic1
 ```
 
+La creación del proyecto podría provocar errores relativos al CSS. En tal caso, habría que instalar `node-sass`, borrar el directorio `node_modules` y actualizar las dependencias: 
+
+```console
+cd exercise01a
+npm install node-sass
+rm -Rf node_modules
+npm install
+```
+
+No sería de extrañar que se siguieran produciendo errores. Ionic 1 ya es muy antiguo y hace uso de librerías obsoletas. Esto no va a afectar en ningún modo a los proyectos que realicemos con versiones modernas de este framework. 
+
+Si el proyecto se ha creado correctamente, se puede lanzar el servidor:
+
+```console
+ionic serve
+```
+
 
 
 Estructura de directorios y ficheros:
 
 ```console
-
+cd exercise01a
+npm install node-sass
+rm -Rf node_modules
+npm install
 ```
 
 ### Creación de un proyecto en Ionic Versión 3 (con Angular)
