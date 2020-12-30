@@ -175,7 +175,7 @@ La carpeta `pages` también desaparece en esta versión, aunque se puede crear m
 
 `www/index.html`
 
-```console
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -230,7 +230,7 @@ La carpeta `pages` también desaparece en esta versión, aunque se puede crear m
 
 `src/app/pages/home/home.html`
 
-```console
+```html
 <ion-header>
   <ion-navbar>
     <ion-title>
@@ -248,10 +248,22 @@ La carpeta `pages` también desaparece en esta versión, aunque se puede crear m
 
 ### Hola mundo en Ionic 4+
 
-``
+`src/app/home/home.page.html`
 
-```console
+```html
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
 
+<ion-content [fullscreen]="true">
+  <div id="container">
+    ¡Hola mundo!
+  </div>
+</ion-content>
 ```
 
 <img src="ionic4holamundo.png">
