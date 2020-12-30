@@ -120,14 +120,47 @@ Si indagamos un poco dentro del directorio `app` o en `pages` (donde se encuentr
 
 ### Creación de un proyecto en Ionic Versión 4 o posterior (con Angular)
 
-```console
+Creación del proyecto:
 
+```console
+ionic start exercise01c blank --type=angular
 ```
 
 Estructura de directorios y ficheros:
 
 ```console
-
+exercise01c
+├── angular.json
+├── browserslist
+├── e2e
+│   ├── protractor.conf.js
+│   ├── src
+│   └── tsconfig.json
+├── ionic.config.json
+├── karma.conf.js
+├── node_modules
+│   ├── abab
+.   .
+.   .
+.   .
+│   └── zone.js
+├── package.json
+├── package-lock.json
+├── src
+│   ├── app
+│   ├── assets
+│   ├── environments
+│   ├── global.scss
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── test.ts
+│   ├── theme
+│   └── zone-flags.ts
+├── tsconfig.app.json
+├── tsconfig.json
+├── tsconfig.spec.json
+└── tslint.json
 ```
 
 ## Ejercicio 2
