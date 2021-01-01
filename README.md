@@ -291,9 +291,74 @@ En todas las versiones de Ionic se usa **HTML** como lenguaje de marcado para la
 
 En un proyecto de Ionic 1 recién creado no hay ningún fichero específico para indicar las rutas ni hay definidas rutas por defecto en ningún lugar.
 
-A continuación se muestra un ejemplo de definición de rutas en el archivo `app.js`:
+A continuación se muestra un ejemplo de definición de rutas en el archivo `app.js` (extraido de <https://github.com/ionic-team/ionic-migration-demo-v1>):
 
 ```javascript
+.config(function($stateProvider, $urlRouterProvider) {
+
+  // Ionic uses AngularUI Router which uses the concept of states
+  // Learn more here: https://github.com/angular-ui/ui-router
+  // Set up the various states which the app can be in.
+  // Each state's controller can be found in controllers.js
+  $stateProvider
+
+  // setup an abstract state for the tabs directive
+    .state('tab', {
+    url: '/tab',
+    abstract: true,
+    templateUrl: 'templates/tabs.html'
+  })
+
+  // Each tab has its own nav history stack:
+
+  .state('tab.feed', {
+    url: '/feed',
+    views: {
+      'tab-feed': {
+        templateUrl: 'templates/tab-feed.html',
+        controller: 'FeedCtrl'
+      }
+    }
+  })
+
+  .state('tab.chats', {
+      url: '/chats',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/tab-chats.html',
+          controller: 'ChatsCtrl'
+        }
+      }
+    })
+    .state('tab.chat-detail', {
+      url: '/chats/:chatId',
+      views: {
+        'tab-chats': {
+          templateUrl: 'templates/chat-detail.html',
+          controller: 'ChatDetailCtrl'
+        }
+      }
+    })
+
+  .state('tab.account', {
+    url: '/account',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/tab-account.html',
+        controller: 'AccountCtrl'
+      }
+    }
+  });
+
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/tab/feed');
+
+});
+```
+
+## Enrutamiento en Ionic 2+
+
+```typescript
 
 ```
 
