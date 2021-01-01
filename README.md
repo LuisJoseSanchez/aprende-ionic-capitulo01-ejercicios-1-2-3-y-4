@@ -283,9 +283,7 @@ La carpeta `pages` también desaparece en esta versión, aunque se puede crear m
 
 ## Ejercicio 3
 
-```console
-
-```
+En todas las versiones de Ionic se usa **HTML** como lenguaje de marcado para las vistas. En cuanto al lenguaje de programación que se utiliza para la lógica de negocio, en Ionic 1 se usaba **Javascript** y a partir de Ionic 2 se usa **Typescript**.
 
 ## Ejercicio 4
 
