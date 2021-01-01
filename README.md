@@ -356,11 +356,19 @@ A continuación se muestra un ejemplo de definición de rutas en el archivo `app
 });
 ```
 
-## Enrutamiento en Ionic 2+
+## Enrutamiento en Ionic 2/3
 
 ```typescript
 
 ```
+
+
+## Enrutamiento en Ionic 4+
+
+```typescript
+
+```
+
 
 <hr>
 
