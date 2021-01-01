@@ -287,7 +287,13 @@ En todas las versiones de Ionic se usa **HTML** como lenguaje de marcado para la
 
 ## Ejercicio 4
 
-```console
+## Enrutamiento en Ionic 1
+
+En un proyecto de Ionic 1 recién creado no hay ningún fichero específico para indicar las rutas ni hay definidas rutas por defecto en ningún lugar.
+
+A continuación se muestra un ejemplo de definición de rutas en el archivo `app.js`:
+
+```javascript
 
 ```
 
