@@ -358,10 +358,27 @@ A continuación se muestra un ejemplo de definición de rutas en el archivo `app
 
 ## Enrutamiento en Ionic 2/3
 
+Sigue sin haber un fichero específico para definir el enrutamiento. Las rutas se añaden en los `imports` de `@NgModule` del archivo `src/app/appmodule.ts` (fuente: <http://blog.enriqueoriol.com/2017/01/ionic-deeplinker-ii-urls-y-tabs.html>):
+
 ```typescript
+//src/app/app.module.ts
+//...some stuff...
 
+@NgModule({
+  //...more stuff...
+  imports: [
+    IonicModule.forRoot(MyApp, {}, {
+      links:[
+        {segment:'home', component:HomePage, name: 'Home Page'},
+        {segment:'contact', component:ContactPage, name: 'Contact Page'},
+        {segment:'about', component:AboutPage, name: 'About Page'}
+      ]
+    })
+  ],
+  //...more stuff...
+})
+export class AppModule {}
 ```
-
 
 ## Enrutamiento en Ionic 4+
 
