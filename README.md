@@ -382,8 +382,31 @@ export class AppModule {}
 
 ## Enrutamiento en Ionic 4+
 
-```typescript
+Ionic pasa a usar el mismo enrutamiento de Angular. Ahora sí que existe un archivo exclusivo para las rutas, se trata de `src/app/app-routing.module.ts`. En un proyecto nuevo, ese fichero tiene el siguiente código:
 
+```typescript
+import { NgModule } from '@angular/core';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
 ```
 
 
